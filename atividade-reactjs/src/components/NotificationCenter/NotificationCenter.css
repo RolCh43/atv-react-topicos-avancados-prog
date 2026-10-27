@@ -1,0 +1,31 @@
+.notification-center {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.notification-center .dropdown {
+  max-width: 280px;
+}
+
+.notification-center__buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
+}
+
+.notification-center__buttons .btn {
+  padding: 0.85rem 1rem;
+}
+
+.notification-center__hint {
+  margin: 0;
+  color: var(--color-muted);
+  font-size: 0.875rem;
+}
+
+@media (max-width: 359px) {
+  .notification-center__buttons {
+    grid-template-columns: 1fr;
+  }
+}

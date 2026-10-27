@@ -1,0 +1,51 @@
+.main {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.main:focus {
+  outline: none;
+}
+
+.hero {
+  margin-bottom: 1.5rem;
+}
+
+.hero h1 {
+  margin: 0 0 0.5rem;
+  font-size: clamp(1.5rem, 4vw, 2.25rem);
+}
+
+.hero p {
+  margin: 0;
+  max-width: 65ch;
+  color: var(--color-muted);
+}
+
+/* Duas colunas apenas em telas grandes */
+.grid-2 {
+  display: grid;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.grid-2 > .section {
+  margin-bottom: 0;
+}
+
+@media (min-width: 1024px) {
+  .grid-2 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.footer {
+  padding: 2rem 1rem;
+  color: var(--color-muted);
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.footer p {
+  margin: 0.25rem 0;
+}

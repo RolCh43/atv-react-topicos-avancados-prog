@@ -1,0 +1,42 @@
+.catalog {
+  scroll-margin-top: 90px;
+}
+
+.catalog__toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.catalog__toolbar .dropdown {
+  flex: 1 1 200px;
+  max-width: 280px;
+}
+
+.catalog__count {
+  margin: 0 0 0 auto;
+  color: var(--color-muted);
+  font-size: 0.9rem;
+}
+
+.catalog__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media (max-width: 599px) {
+  .catalog__toolbar .dropdown {
+    max-width: none;
+  }
+
+  .catalog__count {
+    width: 100%;
+    margin: 0;
+  }
+}
